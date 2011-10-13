@@ -11,4 +11,13 @@ Dir['*'].each do |file|
   `ln -s #{File.expand_path file} #{target}`
 end
 
+#install Janus
+`curl https://raw.github.com/carlhuda/janus/master/bootstrap.sh -o - | sh`
+
+#install oh-my-zsh
+`wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh`
+
+
+
+
 
