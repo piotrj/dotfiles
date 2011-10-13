@@ -1,0 +1,10 @@
+set guioptions=aAce
+
+" Empty erb tags
+let b:surround_{char2nr('-')} = "<% \r %>"
+
+" Using arrows in visual mode
+vnoremap <Left> h
+vnoremap <Right> l
+vnoremap <Up> k
+vnoremap <Down> j
